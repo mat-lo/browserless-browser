@@ -7,13 +7,5 @@ edit size and address in `main.swift`.
 compile with:
 
 ```
-
-```
-
-\`\`\`
 swiftc -o browser main.swift -framework Cocoa -framework WebKit
-\`\`\`
-
-```
-
 ```
