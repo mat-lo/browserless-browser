@@ -1,12 +1,16 @@
 import Cocoa
 import WebKit
 
+// Window dimensions constants
+private let WINDOW_WIDTH: CGFloat = 1024
+private let WINDOW_HEIGHT: CGFloat = 768
+
 class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow!
     var webView: WKWebView!
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        let windowRect = NSRect(x: 0, y: 0, width: 1285, height: 1030)
+        let windowRect = NSRect(x: 0, y: 0, width: WINDOW_WIDTH, height: WINDOW_HEIGHT)
 
         window = NSWindow(
             contentRect: windowRect,
